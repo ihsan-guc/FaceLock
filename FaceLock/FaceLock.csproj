@@ -33,6 +33,42 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Emgu.CV, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.GPU, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.GPU.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.OCR, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.OCR.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.OpenCL, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.OpenCL.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.Stitching, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.Stitching.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.VideoStab, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.VideoStab.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.Util.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,8 +82,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FaceLockAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaceLockAdd.Designer.cs">
+      <DependentUpon>FaceLockAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestFaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestFaces.Designer.cs">
+      <DependentUpon>TestFaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BusinessRecognition.cs" />
+    <Compile Include="Model\Classifier_Train.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FaceLockAdd.resx">
+      <DependentUpon>FaceLockAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestFaces.resx">
+      <DependentUpon>TestFaces.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -69,6 +125,34 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\indir.png" />
+    <Content Include="Images\scanning.png" />
+    <Content Include="OpenDll\cvextern.dll" />
+    <Content Include="OpenDll\OpenCL.dll" />
+    <Content Include="OpenDll\opencv_calib3d2410.dll" />
+    <Content Include="OpenDll\opencv_contrib2410.dll" />
+    <Content Include="OpenDll\opencv_core2410.dll" />
+    <Content Include="OpenDll\opencv_features2d2410.dll" />
+    <Content Include="OpenDll\opencv_flann2410.dll" />
+    <Content Include="OpenDll\opencv_gpu2410.dll" />
+    <Content Include="OpenDll\opencv_highgui2410.dll" />
+    <Content Include="OpenDll\opencv_imgproc2410.dll" />
+    <Content Include="OpenDll\opencv_legacy2410.dll" />
+    <Content Include="OpenDll\opencv_ml2410.dll" />
+    <Content Include="OpenDll\opencv_nonfree2410.dll" />
+    <Content Include="OpenDll\opencv_objdetect2410.dll" />
+    <Content Include="OpenDll\opencv_photo2410.dll" />
+    <Content Include="OpenDll\opencv_stitching2410.dll" />
+    <Content Include="OpenDll\opencv_superres2410.dll" />
+    <Content Include="OpenDll\opencv_video2410.dll" />
+    <Content Include="OpenDll\opencv_videostab2410.dll" />
+    <Content Include="OpenDll\ZedGraph.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

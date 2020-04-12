@@ -21,7 +21,7 @@ namespace FaceLock.Forms
             Control.CheckForIllegalCrossThreadCalls = false;
             InitializeComponent();
             Camera();
-            pictureBox2.ImageLocation = "C:\\Users\\EysanGuc\\Desktop\\FaceRecognitionGencayYildiz\\WindowsFormsApp56\\WindowsFormsApp56\\indir.png";
+            pictureBox2.ImageLocation = "C:\\Users\\EysanGuc\\source\\repos\\FaceLock\\FaceLock\\Images\\indir.png";
         }
         BusinessRecognition recognition = new BusinessRecognition("D:\\", "Faces", "Faces.xml");
         Classifier_Train train = new Classifier_Train("D:\\", "Faces", "Faces.xml");
@@ -39,21 +39,21 @@ namespace FaceLock.Forms
                 MCvFont font = new MCvFont(FONT.CV_FONT_HERSHEY_COMPLEX, 0.5, 0.5);
                 foreach (MCvAvgComp yuz in Yuzler[0])
                 {
-                    var sadeyuz = grayimage.Copy(yuz.rect).Convert<Gray, byte>().Resize(100, 100, INTER.CV_INTER_CUBIC);
+                    var sadeyuz = grayimage.Copy(yuz.rect).Convert<Gray, byte>().Resize(150, 150, INTER.CV_INTER_CUBIC);
                     if (train != null)
                         if (train.IsTrained)
                         {
                             string name = train.Recognise(sadeyuz);
                             int match_value = (int)train.Get_Eigen_Distance;
                             image.Draw(name + " ", ref font, new Point(yuz.rect.X - 2, yuz.rect.Y - 2), new Bgr(Color.Blue));
-                            pictureBox2.LoadAsync("C:\\Users\\EysanGuc\\Desktop\\FaceRecognitionGencayYildiz\\WindowsFormsApp56\\WindowsFormsApp56\\Images\\indir.png");
+                            pictureBox2.LoadAsync("C:\\Users\\EysanGuc\\source\\repos\\FaceLock\\FaceLock\\Images\\indir.png");
                             step = "1";
                         }
                     image.Draw(yuz.rect, new Bgr(Color.Red), 2);
                 }
                 if (step != "1")
                 {
-                    pictureBox2.ImageLocation = "C:\\Users\\EysanGuc\\Desktop\\FaceRecognitionGencayYildiz\\WindowsFormsApp56\\WindowsFormsApp56\\Images\\scanning.png";
+                    pictureBox2.LoadAsync("C:\\Users\\EysanGuc\\source\\repos\\FaceLock\\FaceLock\\Images\\scanning.png");
                 }
                 pictureBox1.Image = image.ToBitmap();
                 step = "";

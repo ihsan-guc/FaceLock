@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FaceLock.Forms;
+using System;
 using System.Windows.Forms;
 
 namespace FaceLock
@@ -13,7 +14,7 @@ namespace FaceLock
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FaceLockAdd());
+            Application.Run(new TestFaces());
         }
     }
 }

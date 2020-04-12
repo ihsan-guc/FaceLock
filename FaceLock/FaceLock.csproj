@@ -82,10 +82,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FaceLockAdd.cs">
+    <Compile Include="Forms\FaceLockAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FaceLockAdd.Designer.cs">
+    <Compile Include="Forms\FaceLockAdd.Designer.cs">
       <DependentUpon>FaceLockAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\TestFaces.cs">
@@ -98,7 +98,7 @@
     <Compile Include="Model\Classifier_Train.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FaceLockAdd.resx">
+    <EmbeddedResource Include="Forms\FaceLockAdd.resx">
       <DependentUpon>FaceLockAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TestFaces.resx">

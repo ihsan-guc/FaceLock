@@ -91,35 +91,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FaceAdd.cs">
+    <Compile Include="Forms\FaceAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FaceAdd.Designer.cs">
+    <Compile Include="Forms\FaceAdd.Designer.cs">
       <DependentUpon>FaceAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FaceLockAdd.cs">
+    <Compile Include="Forms\FacesTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FaceLockAdd.Designer.cs">
-      <DependentUpon>FaceLockAdd.cs</DependentUpon>
+    <Compile Include="Forms\FacesTest.Designer.cs">
+      <DependentUpon>FacesTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TestFaces.cs">
+    <Compile Include="TestFaces.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TestFaces.Designer.cs">
+    <Compile Include="TestFaces.Designer.cs">
       <DependentUpon>TestFaces.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\BusinessRecognition.cs" />
     <Compile Include="Model\Classifier_Train.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FaceAdd.resx">
+    <EmbeddedResource Include="Forms\FaceAdd.resx">
       <DependentUpon>FaceAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FaceLockAdd.resx">
-      <DependentUpon>FaceLockAdd.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FacesTest.resx">
+      <DependentUpon>FacesTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TestFaces.resx">
+    <EmbeddedResource Include="TestFaces.resx">
       <DependentUpon>TestFaces.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

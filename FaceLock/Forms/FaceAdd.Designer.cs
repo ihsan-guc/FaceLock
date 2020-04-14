@@ -36,6 +36,7 @@
             this.lbltestName = new MetroFramework.Controls.MetroLabel();
             this.FaceNametxt = new MetroFramework.Controls.MetroTextBox();
             this.SmallFacepctbox = new System.Windows.Forms.PictureBox();
+            this.lblkişiismi = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.Facepicturebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SmallFacepctbox)).BeginInit();
             this.SuspendLayout();
@@ -89,7 +90,7 @@
             this.FaceNametxt.CustomButton.UseSelectable = true;
             this.FaceNametxt.CustomButton.Visible = false;
             this.FaceNametxt.Lines = new string[0];
-            this.FaceNametxt.Location = new System.Drawing.Point(596, 242);
+            this.FaceNametxt.Location = new System.Drawing.Point(596, 238);
             this.FaceNametxt.MaxLength = 32767;
             this.FaceNametxt.Name = "FaceNametxt";
             this.FaceNametxt.PasswordChar = '\0';
@@ -106,17 +107,27 @@
             // 
             // SmallFacepctbox
             // 
-            this.SmallFacepctbox.Location = new System.Drawing.Point(627, 63);
+            this.SmallFacepctbox.Location = new System.Drawing.Point(611, 63);
             this.SmallFacepctbox.Name = "SmallFacepctbox";
             this.SmallFacepctbox.Size = new System.Drawing.Size(150, 150);
             this.SmallFacepctbox.TabIndex = 5;
             this.SmallFacepctbox.TabStop = false;
+            // 
+            // lblkişiismi
+            // 
+            this.lblkişiismi.AutoSize = true;
+            this.lblkişiismi.Location = new System.Drawing.Point(705, 216);
+            this.lblkişiismi.Name = "lblkişiismi";
+            this.lblkişiismi.Size = new System.Drawing.Size(54, 19);
+            this.lblkişiismi.TabIndex = 6;
+            this.lblkişiismi.Text = "Kişi İsmi";
             // 
             // FaceAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblkişiismi);
             this.Controls.Add(this.SmallFacepctbox);
             this.Controls.Add(this.FaceNametxt);
             this.Controls.Add(this.lbltestName);
@@ -140,5 +151,6 @@
         private MetroFramework.Controls.MetroLabel lbltestName;
         private MetroFramework.Controls.MetroTextBox FaceNametxt;
         private System.Windows.Forms.PictureBox SmallFacepctbox;
+        private MetroFramework.Controls.MetroLabel lblkişiismi;
     }
 }

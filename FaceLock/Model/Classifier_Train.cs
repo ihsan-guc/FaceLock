@@ -3,9 +3,7 @@ using Emgu.CV.Structure;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Serialization;
@@ -65,7 +63,7 @@ namespace FaceLock.Model
                 EigenObjectRecognizer.RecognitionResult ER = recognizer.Recognize(Input_image);
                 if (ER == null)
                 {
-                    Eigen_label = "Tanımsız";
+                    Eigen_label = "Tanimsiz";
                     Eigen_Distance = 0;
                     return Eigen_label;
                 }
@@ -75,7 +73,7 @@ namespace FaceLock.Model
                     Eigen_Distance = ER.Distance;
                     if (Eigen_Thresh > -1) Eigen_threshold = Eigen_Thresh;
                     if (Eigen_Distance > Eigen_threshold) return Eigen_label;
-                    else return "Tanımsız";
+                    else return "Tanimsiz";
                 }
             }
             else return "";

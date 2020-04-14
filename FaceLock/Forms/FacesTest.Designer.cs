@@ -1,6 +1,6 @@
 ﻿namespace FaceLock.Forms
 {
-    partial class TestFaces
+    partial class FacesTest
     {
         /// <summary>
         /// Required designer variable.
@@ -36,31 +36,31 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(599, 8);
+            this.pictureBox2.Location = new System.Drawing.Point(656, 60);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(227, 461);
+            this.pictureBox2.Size = new System.Drawing.Size(227, 346);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 60);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(552, 461);
+            this.pictureBox1.Size = new System.Drawing.Size(552, 346);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // TestFaces
+            // FacesTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 477);
+            this.ClientSize = new System.Drawing.Size(900, 423);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "TestFaces";
-            this.Text = "TestFaces";
+            this.Name = "FacesTest";
+            this.Text = "FacesTest";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -103,12 +103,6 @@
     <Compile Include="Forms\FacesTest.Designer.cs">
       <DependentUpon>FacesTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestFaces.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TestFaces.Designer.cs">
-      <DependentUpon>TestFaces.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model\BusinessRecognition.cs" />
     <Compile Include="Model\Classifier_Train.cs" />
     <Compile Include="Program.cs" />
@@ -118,9 +112,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FacesTest.resx">
       <DependentUpon>FacesTest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TestFaces.resx">
-      <DependentUpon>TestFaces.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

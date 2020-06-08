@@ -45,7 +45,7 @@ namespace FaceLock.Forms
                         }
                     image.Draw(yuz.rect, new Bgr(Color.Red), 2);
                 }
-                if (step == "Tanimsiz")
+                if (step == "Tanimsiz" || step == "")
                 {
                     pictureBox2.LoadAsync("C:\\Users\\EysanGuc\\source\\repos\\FaceLock\\FaceLock\\Images\\scanning.png");
                 }

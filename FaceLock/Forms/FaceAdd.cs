@@ -45,8 +45,10 @@ namespace FaceLock
             MessageBox.Show("Diğer Sayfaya Yönlendiriliyorsunuz 2 saniye sonra");
             Downloadbar.Value = 0;
             Thread.Sleep(2000);
-            TestFaces testFaces = new TestFaces();
+            this.Hide();
+            FacesTest testFaces = new FacesTest();
             testFaces.Show();
+            
         }
         public void Camera()
         {
